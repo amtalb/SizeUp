@@ -2,3 +2,6 @@
 elm-stuff/
 *.map
 main.js
+database.rules.json
+firebase.json
+public/
