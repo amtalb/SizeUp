@@ -1,0 +1,4 @@
+.vscode
+elm-stuff/
+*.map
+main.js

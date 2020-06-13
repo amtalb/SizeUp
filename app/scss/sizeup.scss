@@ -1,0 +1,57 @@
+body {
+  background-image: radial-gradient(ellipse at right, #F4FEC1, #2A0033);
+  color: #F4FEC1;
+  font-family: 'Rokkitt', serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #F4FEC1;
+  }
+
+  #header {
+
+    #header-contents {
+      text-align: center;
+      
+      select {
+        color: purple;
+        background-color: #F4FEC1;
+        font-size: 17px;
+        font-family: 'Rokkitt', serif;
+      }
+    }
+  }
+
+  #earth_div1, #earth_div2 {
+    top: 0; 
+    bottom: 0; 
+    position: absolute !important; 
+    width: 50vw; 
+    z-index: -1000;
+  }
+
+  #earth_div1 {
+    left: 0;
+  }
+
+  #earth_div2 {
+    right: 0
+  }
+
+  #filler {
+    flex-grow: 5;
+  }
+
+  #bottom {
+    display: flex;
+    flex-direction: row;
+
+    #selected, #compare {
+      width: 50vw;
+      text-align: center;
+    }
+  }
+}

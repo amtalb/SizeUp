@@ -1,0 +1,2074 @@
+[
+  {
+    "name": "Russia",
+    "total": 17098246,
+    "land": 16377742,
+    "water": 720500,
+    "latitude": 61.98052209,
+    "longitude": 96.68656112
+  },
+  {
+    "name": "Antarctica",
+    "total": 14000000,
+    "land": 14000000,
+    "water": 0,
+    "latitude": -80.50857913,
+    "longitude": 19.92108951
+  },
+  {
+    "name": "Canada",
+    "total": 9984670,
+    "land": 9093507,
+    "water": 891163,
+    "latitude": 61.36206324,
+    "longitude": -98.30777028
+  },
+  {
+    "name": "China",
+    "total": 9596961,
+    "land": 9326410,
+    "water": 270550,
+    "latitude": 36.56176546,
+    "longitude": 103.8190735
+  },
+  {
+    "name": "United States",
+    "total": 9525067,
+    "land": 9147593,
+    "water": 377424,
+    "latitude": 45.6795472,
+    "longitude": -112.4616737
+  },
+  {
+    "name": "Brazil",
+    "total": 8515767,
+    "land": 8460415,
+    "water": 55352,
+    "latitude": -10.78777702,
+    "longitude": -53.09783113
+  },
+  {
+    "name": "Australia",
+    "total": 7692024,
+    "land": 7633565,
+    "water": 58459,
+    "latitude": -25.73288704,
+    "longitude": 134.4910001
+  },
+  {
+    "name": "India",
+    "total": 3287263,
+    "land": 2973190,
+    "water": 314073,
+    "latitude": 22.88578212,
+    "longitude": 79.6119761
+  },
+  {
+    "name": "Argentina",
+    "total": 2780400,
+    "land": 2736690,
+    "water": 43710,
+    "latitude": -35.3813488,
+    "longitude": -65.17980692
+  },
+  {
+    "name": "Kazakhstan",
+    "total": 2724900,
+    "land": 2699700,
+    "water": 25200,
+    "latitude": 48.15688067,
+    "longitude": 67.29149357
+  },
+  {
+    "name": "Algeria",
+    "total": 2381741,
+    "land": 2381741,
+    "water": 0,
+    "latitude": 28.15893849,
+    "longitude": 2.61732301
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "total": 2344858,
+    "land": 2267048,
+    "water": 77810,
+    "latitude": -2.87746289,
+    "longitude": 23.64396107
+  },
+  {
+    "name": "Greenland (Denmark)",
+    "total": 2166086,
+    "land": 2166086,
+    "water": 0,
+    "latitude": 74.71051289,
+    "longitude": -41.34191127
+  },
+  {
+    "name": "Saudi Arabia",
+    "total": 2149690,
+    "land": 2149690,
+    "water": 0,
+    "latitude": 24.12245841,
+    "longitude": 44.53686271
+  },
+  {
+    "name": "Mexico",
+    "total": 1964375,
+    "land": 1943945,
+    "water": 20430,
+    "latitude": 23.94753724,
+    "longitude": -102.5234517
+  },
+  {
+    "name": "Indonesia",
+    "total": 1910931,
+    "land": 1811569,
+    "water": 93000,
+    "latitude": -2.21505456,
+    "longitude": 117.2401137
+  },
+  {
+    "name": "Sudan",
+    "total": 1861484,
+    "land": 0,
+    "water": 0,
+    "latitude": 15.99035669,
+    "longitude": 29.94046812
+  },
+  {
+    "name": "Libya",
+    "total": 1759540,
+    "land": 1759540,
+    "water": 0,
+    "latitude": 27.03094495,
+    "longitude": 18.00866169
+  },
+  {
+    "name": "Iran",
+    "total": 1648195,
+    "land": 1531595,
+    "water": 116600,
+    "latitude": 32.57503292,
+    "longitude": 54.27407004
+  },
+  {
+    "name": "Mongolia",
+    "total": 1564110,
+    "land": 1553556,
+    "water": 10560,
+    "latitude": 46.82681544,
+    "longitude": 103.0529977
+  },
+  {
+    "name": "Peru",
+    "total": 1285216,
+    "land": 1279996,
+    "water": 5220,
+    "latitude": -9.15280381,
+    "longitude": -74.38242685
+  },
+  {
+    "name": "Chad",
+    "total": 1284000,
+    "land": 1259200,
+    "water": 24800,
+    "latitude": 15.33333758,
+    "longitude": 18.64492513
+  },
+  {
+    "name": "Niger",
+    "total": 1267000,
+    "land": 1266700,
+    "water": 300,
+    "latitude": 17.41912493,
+    "longitude": 9.38545882
+  },
+  {
+    "name": "Angola",
+    "total": 1246700,
+    "land": 1246700,
+    "water": 0,
+    "latitude": -12.29336054,
+    "longitude": 17.53736768
+  },
+  {
+    "name": "Mali",
+    "total": 1240192,
+    "land": 1220190,
+    "water": 20002,
+    "latitude": 17.34581581,
+    "longitude": -3.54269065
+  },
+  {
+    "name": "South Africa",
+    "total": 1221037,
+    "land": 1214470,
+    "water": 4620,
+    "latitude": -29.00034095,
+    "longitude": 25.08390093
+  },
+  {
+    "name": "Colombia",
+    "total": 1141748,
+    "land": 1038700,
+    "water": 100210,
+    "latitude": 3.91383431,
+    "longitude": -73.08114582
+  },
+  {
+    "name": "Ethiopia",
+    "total": 1104300,
+    "land": 1000000,
+    "water": 104300,
+    "latitude": 8.62278679,
+    "longitude": 39.60080098
+  },
+  {
+    "name": "Bolivia",
+    "total": 1098581,
+    "land": 1083301,
+    "water": 15280,
+    "latitude": -16.70814787,
+    "longitude": -64.68538645
+  },
+  {
+    "name": "Mauritania",
+    "total": 1030700,
+    "land": 1025520,
+    "water": 4480,
+    "latitude": 20.25736706,
+    "longitude": -10.34779815
+  },
+  {
+    "name": "Egypt",
+    "total": 1002450,
+    "land": 995450,
+    "water": 6000,
+    "latitude": 26.49593311,
+    "longitude": 29.86190099
+  },
+  {
+    "name": "Tanzania",
+    "total": 945087,
+    "land": 885800,
+    "water": 61500,
+    "latitude": -6.27565408,
+    "longitude": 34.81309981
+  },
+  {
+    "name": "Nigeria",
+    "total": 923768,
+    "land": 910768,
+    "water": 13000,
+    "latitude": 9.59411452,
+    "longitude": 8.08943895
+  },
+  {
+    "name": "Venezuela",
+    "total": 916445,
+    "land": 882050,
+    "water": 30000,
+    "latitude": 7.12422421,
+    "longitude": -66.18184123
+  },
+  {
+    "name": "Pakistan",
+    "total": 907132,
+    "land": 881912,
+    "water": 25220,
+    "latitude": 29.9497515,
+    "longitude": 69.33957937
+  },
+  {
+    "name": "Namibia",
+    "total": 825615,
+    "land": 823290,
+    "water": 2425,
+    "latitude": -22.13032568,
+    "longitude": 17.20963567
+  },
+  {
+    "name": "Mozambique",
+    "total": 801590,
+    "land": 786380,
+    "water": 13000,
+    "latitude": -17.27381643,
+    "longitude": 35.53367543
+  },
+  {
+    "name": "Turkey",
+    "total": 783562,
+    "land": 769632,
+    "water": 13930,
+    "latitude": 39.0616029,
+    "longitude": 35.16895346
+  },
+  {
+    "name": "Chile",
+    "total": 756102,
+    "land": 743812,
+    "water": 12290,
+    "latitude": -37.73070989,
+    "longitude": -71.38256213
+  },
+  {
+    "name": "Zambia",
+    "total": 752612,
+    "land": 743398,
+    "water": 9220,
+    "latitude": -13.45824152,
+    "longitude": 27.77475946
+  },
+  {
+    "name": "Myanmar",
+    "total": 676578,
+    "land": 653508,
+    "water": 23070,
+    "latitude": 21.18566599,
+    "longitude": 96.48843321
+  },
+  {
+    "name": "Afghanistan",
+    "total": 652230,
+    "land": 652230,
+    "water": 0,
+    "latitude": 33.83523073,
+    "longitude": 66.00473366
+  },
+  {
+    "name": "South Sudan",
+    "total": 644329,
+    "land": 0,
+    "water": 0,
+    "latitude": 7.30877945,
+    "longitude": 30.24790002
+  },
+  {
+    "name": "Somalia",
+    "total": 637657,
+    "land": 627337,
+    "water": 10320,
+    "latitude": 4.75062876,
+    "longitude": 45.70714487
+  },
+  {
+    "name": "Central African Republic",
+    "total": 622984,
+    "land": 622984,
+    "water": 0,
+    "latitude": 6.56823297,
+    "longitude": 20.46826831
+  },
+  {
+    "name": "Ukraine",
+    "total": 603500,
+    "land": 579300,
+    "water": 24200,
+    "latitude": 48.99656673,
+    "longitude": 31.38326469
+  },
+  {
+    "name": "Madagascar",
+    "total": 587041,
+    "land": 581540,
+    "water": 5501,
+    "latitude": -19.37189587,
+    "longitude": 46.70473674
+  },
+  {
+    "name": "Botswana",
+    "total": 581730,
+    "land": 566730,
+    "water": 15000,
+    "latitude": -22.18403213,
+    "longitude": 23.79853368
+  },
+  {
+    "name": "Kenya",
+    "total": 580367,
+    "land": 569140,
+    "water": 11227,
+    "latitude": 0.59988022,
+    "longitude": 37.79593973
+  },
+  {
+    "name": "France (metropolitan)",
+    "total": 543940,
+    "land": 0,
+    "water": 0,
+    "latitude": 47.040067,
+    "longitude": 2.844913
+  },
+  {
+    "name": "Yemen",
+    "total": 527968,
+    "land": 527968,
+    "water": 0,
+    "latitude": 15.90928005,
+    "longitude": 47.58676189
+  },
+  {
+    "name": "Thailand",
+    "total": 513120,
+    "land": 510890,
+    "water": 2230,
+    "latitude": 15.11815794,
+    "longitude": 101.0028813
+  },
+  {
+    "name": "Spain",
+    "total": 505992,
+    "land": 498980,
+    "water": 6390,
+    "latitude": 40.24448698,
+    "longitude": -3.64755047
+  },
+  {
+    "name": "Turkmenistan",
+    "total": 488100,
+    "land": 469930,
+    "water": 18170,
+    "latitude": 39.11554137,
+    "longitude": 59.37100021
+  },
+  {
+    "name": "Cameroon",
+    "total": 475442,
+    "land": 472710,
+    "water": 2730,
+    "latitude": 5.69109849,
+    "longitude": 12.73964156
+  },
+  {
+    "name": "Papua New Guinea",
+    "total": 462840,
+    "land": 452860,
+    "water": 9980,
+    "latitude": -6.46416646,
+    "longitude": 145.2074475
+  },
+  {
+    "name": "Sweden",
+    "total": 450295,
+    "land": 410335,
+    "water": 39960,
+    "latitude": 62.77966519,
+    "longitude": 16.74558049
+  },
+  {
+    "name": "Uzbekistan",
+    "total": 447400,
+    "land": 425400,
+    "water": 22000,
+    "latitude": 41.75554225,
+    "longitude": 63.14001528
+  },
+  {
+    "name": "Morocco",
+    "total": 446550,
+    "land": 446300,
+    "water": 250,
+    "latitude": 29.83762955,
+    "longitude": -8.45615795
+  },
+  {
+    "name": "Iraq",
+    "total": 438317,
+    "land": 437367,
+    "water": 950,
+    "latitude": 33.03970582,
+    "longitude": 43.74353149
+  },
+  {
+    "name": "Paraguay",
+    "total": 406752,
+    "land": 397302,
+    "water": 9450,
+    "latitude": -23.22823913,
+    "longitude": -58.40013703
+  },
+  {
+    "name": "Zimbabwe",
+    "total": 390757,
+    "land": 386847,
+    "water": 3910,
+    "latitude": -19.00420419,
+    "longitude": 29.8514412
+  },
+  {
+    "name": "Japan",
+    "total": 377975,
+    "land": 364545,
+    "water": 13430,
+    "latitude": 37.59230135,
+    "longitude": 138.0308956
+  },
+  {
+    "name": "Germany",
+    "total": 357114,
+    "land": 348672,
+    "water": 8350,
+    "latitude": 51.10698181,
+    "longitude": 10.38578051
+  },
+  {
+    "name": "Republic of the Congo",
+    "total": 342000,
+    "land": 341500,
+    "water": 500,
+    "latitude": -0.83787463,
+    "longitude": 15.21965762
+  },
+  {
+    "name": "Finland",
+    "total": 338424,
+    "land": 303815,
+    "water": 34330,
+    "latitude": 64.49884603,
+    "longitude": 26.2746656
+  },
+  {
+    "name": "Vietnam",
+    "total": 331212,
+    "land": 310070,
+    "water": 21140,
+    "latitude": 16.6460167,
+    "longitude": 106.299147
+  },
+  {
+    "name": "Malaysia",
+    "total": 330803,
+    "land": 329613,
+    "water": 1190,
+    "latitude": 3.78986846,
+    "longitude": 109.6976228
+  },
+  {
+    "name": "Norway",
+    "total": 323802,
+    "land": 304282,
+    "water": 19520,
+    "latitude": 68.75015572,
+    "longitude": 15.34834656
+  },
+  {
+    "name": "Ivory Coast",
+    "total": 322463,
+    "land": 318003,
+    "water": 4460,
+    "latitude": 7.6284262,
+    "longitude": -5.5692157
+  },
+  {
+    "name": "Poland",
+    "total": 312696,
+    "land": 311888,
+    "water": 791,
+    "latitude": 52.12759564,
+    "longitude": 19.39012835
+  },
+  {
+    "name": "Oman",
+    "total": 309500,
+    "land": 309500,
+    "water": 0,
+    "latitude": 20.60515333,
+    "longitude": 56.09166155
+  },
+  {
+    "name": "Italy",
+    "total": 301339,
+    "land": 294140,
+    "water": 7200,
+    "latitude": 42.79662641,
+    "longitude": 12.07001339
+  },
+  {
+    "name": "Philippines",
+    "total": 300000,
+    "land": 298170,
+    "water": 1830,
+    "latitude": 11.77536778,
+    "longitude": 122.8839325
+  },
+  {
+    "name": "Ecuador",
+    "total": 276841,
+    "land": 256369,
+    "water": 6720,
+    "latitude": -1.42381612,
+    "longitude": -78.75201922
+  },
+  {
+    "name": "Burkina Faso",
+    "total": 274222,
+    "land": 273602,
+    "water": 620,
+    "latitude": 12.26953846,
+    "longitude": -1.75456601
+  },
+  {
+    "name": "New Zealand",
+    "total": 270467,
+    "land": 262443,
+    "water": 4395,
+    "latitude": -41.81113557,
+    "longitude": 171.4849235
+  },
+  {
+    "name": "Gabon",
+    "total": 267668,
+    "land": 257667,
+    "water": 10000,
+    "latitude": -0.58660025,
+    "longitude": 11.7886287
+  },
+  {
+    "name": "Sahrawi Arab Democratic Republic (Western Sahara)",
+    "total": 266000,
+    "land": 266000,
+    "water": 0,
+    "latitude": 24.22956739,
+    "longitude": -12.21982755
+  },
+  {
+    "name": "Guinea",
+    "total": 245857,
+    "land": 245717,
+    "water": 140,
+    "latitude": 10.43621593,
+    "longitude": -10.94066612
+  },
+  {
+    "name": "United Kingdom",
+    "total": 242495,
+    "land": 241930,
+    "water": 1680,
+    "latitude": 54.12387156,
+    "longitude": -2.86563164
+  },
+  {
+    "name": "Uganda",
+    "total": 241550,
+    "land": 197100,
+    "water": 43938,
+    "latitude": 1.27469299,
+    "longitude": 32.36907971
+  },
+  {
+    "name": "Ghana",
+    "total": 238533,
+    "land": 227533,
+    "water": 11000,
+    "latitude": 7.95345644,
+    "longitude": -1.21676566
+  },
+  {
+    "name": "Romania",
+    "total": 238397,
+    "land": 231291,
+    "water": 7100,
+    "latitude": 45.85243127,
+    "longitude": 24.97293039
+  },
+  {
+    "name": "Laos",
+    "total": 236800,
+    "land": 230800,
+    "water": 6000,
+    "latitude": 18.50217433,
+    "longitude": 103.7377241
+  },
+  {
+    "name": "Guyana",
+    "total": 214969,
+    "land": 196849,
+    "water": 18120,
+    "latitude": 4.79378034,
+    "longitude": -58.98202459
+  },
+  {
+    "name": "Belarus",
+    "total": 207600,
+    "land": 202900,
+    "water": 4700,
+    "latitude": 53.53131377,
+    "longitude": 28.03209307
+  },
+  {
+    "name": "Kyrgyzstan",
+    "total": 199951,
+    "land": 191801,
+    "water": 8150,
+    "latitude": 41.46221943,
+    "longitude": 74.54165513
+  },
+  {
+    "name": "Senegal",
+    "total": 196722,
+    "land": 192530,
+    "water": 4192,
+    "latitude": 14.36624173,
+    "longitude": -14.4734924
+  },
+  {
+    "name": "Syria",
+    "total": 185180,
+    "land": 183630,
+    "water": 1550,
+    "latitude": 35.02547389,
+    "longitude": 38.50788204
+  },
+  {
+    "name": "Cambodia",
+    "total": 181035,
+    "land": 176515,
+    "water": 4520,
+    "latitude": 12.72004786,
+    "longitude": 104.9069433
+  },
+  {
+    "name": "Uruguay",
+    "total": 176215,
+    "land": 175015,
+    "water": 1200,
+    "latitude": -32.79951534,
+    "longitude": -56.01807053
+  },
+  {
+    "name": "Somaliland",
+    "total": 176120,
+    "land": 0,
+    "water": 0,
+    "latitude": 9.73345496,
+    "longitude": 46.25198395
+  },
+  {
+    "name": "Suriname",
+    "total": 163820,
+    "land": 156000,
+    "water": 7820,
+    "latitude": 4.13055413,
+    "longitude": -55.9123457
+  },
+  {
+    "name": "Tunisia",
+    "total": 163610,
+    "land": 155360,
+    "water": 8250,
+    "latitude": 34.11956246,
+    "longitude": 9.55288359
+  },
+  {
+    "name": "Bangladesh",
+    "total": 147570,
+    "land": 130168,
+    "water": 13830,
+    "latitude": 23.86731158,
+    "longitude": 90.23812743
+  },
+  {
+    "name": "Nepal",
+    "total": 147181,
+    "land": 143351,
+    "water": 3830,
+    "latitude": 28.24891365,
+    "longitude": 83.9158264
+  },
+  {
+    "name": "Tajikistan",
+    "total": 143100,
+    "land": 141510,
+    "water": 2590,
+    "latitude": 38.5304539,
+    "longitude": 71.01362631
+  },
+  {
+    "name": "Greece",
+    "total": 131957,
+    "land": 130647,
+    "water": 1310,
+    "latitude": 39.07469623,
+    "longitude": 22.95555794
+  },
+  {
+    "name": "Nicaragua",
+    "total": 130373,
+    "land": 119990,
+    "water": 10380,
+    "latitude": 12.84709429,
+    "longitude": -85.0305297
+  },
+  {
+    "name": "North Korea",
+    "total": 120540,
+    "land": 120538,
+    "water": 2,
+    "latitude": 40.15350311,
+    "longitude": 127.1924797
+  },
+  {
+    "name": "Malawi",
+    "total": 118484,
+    "land": 94080,
+    "water": 24404,
+    "latitude": -13.21808088,
+    "longitude": 34.28935599
+  },
+  {
+    "name": "Eritrea",
+    "total": 117600,
+    "land": 101000,
+    "water": 16600,
+    "latitude": 15.36186618,
+    "longitude": 38.84617011
+  },
+  {
+    "name": "Benin",
+    "total": 114763,
+    "land": 114305,
+    "water": 457.569,
+    "latitude": 9.6417597,
+    "longitude": 2.32785254
+  },
+  {
+    "name": "Honduras",
+    "total": 112492,
+    "land": 111890,
+    "water": 200,
+    "latitude": 14.82688165,
+    "longitude": -86.6151661
+  },
+  {
+    "name": "Liberia",
+    "total": 111369,
+    "land": 96320,
+    "water": 15049,
+    "latitude": 6.45278492,
+    "longitude": -9.32207573
+  },
+  {
+    "name": "Bulgaria",
+    "total": 111002,
+    "land": 108612,
+    "water": 2390,
+    "latitude": 42.76890318,
+    "longitude": 25.21552909
+  },
+  {
+    "name": "Cuba",
+    "total": 109884,
+    "land": 109820,
+    "water": 1040,
+    "latitude": 21.62289528,
+    "longitude": -79.01605384
+  },
+  {
+    "name": "Guatemala",
+    "total": 108889,
+    "land": 107159,
+    "water": 1730,
+    "latitude": 15.69403664,
+    "longitude": -90.36482009
+  },
+  {
+    "name": "Iceland",
+    "total": 103000,
+    "land": 100250,
+    "water": 2750,
+    "latitude": 64.99575386,
+    "longitude": -18.57396167
+  },
+  {
+    "name": "South Korea",
+    "total": 100210,
+    "land": 99909,
+    "water": 301,
+    "latitude": 36.38523983,
+    "longitude": 127.8391609
+  },
+  {
+    "name": "Hungary",
+    "total": 93028,
+    "land": 89608,
+    "water": 3420,
+    "latitude": 47.16277506,
+    "longitude": 19.39559116
+  },
+  {
+    "name": "Portugal",
+    "total": 92090,
+    "land": 91470,
+    "water": 620,
+    "latitude": 39.59550671,
+    "longitude": -8.50104361
+  },
+  {
+    "name": "Jordan",
+    "total": 89342,
+    "land": 88802,
+    "water": 540,
+    "latitude": 31.24579091,
+    "longitude": 36.77136104
+  },
+  {
+    "name": "Serbia",
+    "total": 88361,
+    "land": 88246,
+    "water": 115,
+    "latitude": 44.2215032,
+    "longitude": 20.78958334
+  },
+  {
+    "name": "Azerbaijan",
+    "total": 86600,
+    "land": 86100,
+    "water": 500,
+    "latitude": 40.28827235,
+    "longitude": 47.54599879
+  },
+  {
+    "name": "Austria",
+    "total": 83871,
+    "land": 82445,
+    "water": 1426,
+    "latitude": 47.58549439,
+    "longitude": 14.1264761
+  },
+  {
+    "name": "United Arab Emirates",
+    "total": 83600,
+    "land": 83600,
+    "water": 0,
+    "latitude": 23.90528188,
+    "longitude": 54.3001671
+  },
+  {
+    "name": "Czech Republic",
+    "total": 78865,
+    "land": 77247,
+    "water": 1620,
+    "latitude": 49.73341233,
+    "longitude": 15.31240163
+  },
+  {
+    "name": "Panama",
+    "total": 75417,
+    "land": 74340,
+    "water": 1080,
+    "latitude": 8.51750797,
+    "longitude": -80.11915156
+  },
+  {
+    "name": "Sierra Leone",
+    "total": 71740,
+    "land": 71620,
+    "water": 120,
+    "latitude": 8.56329593,
+    "longitude": -11.79271247
+  },
+  {
+    "name": "Ireland",
+    "total": 70273,
+    "land": 68883,
+    "water": 1390,
+    "latitude": 53.1754487,
+    "longitude": -8.13793569
+  },
+  {
+    "name": "Georgia",
+    "total": 69700,
+    "land": 69700,
+    "water": 0,
+    "latitude": 42.16855755,
+    "longitude": 43.50780252
+  },
+  {
+    "name": "Sri Lanka",
+    "total": 65610,
+    "land": 62732,
+    "water": 2878,
+    "latitude": 7.61266509,
+    "longitude": 80.70108238
+  },
+  {
+    "name": "Lithuania",
+    "total": 65300,
+    "land": 62680,
+    "water": 2620,
+    "latitude": 55.32610984,
+    "longitude": 23.88719355
+  },
+  {
+    "name": "Latvia",
+    "total": 64559,
+    "land": 62249,
+    "water": 2340,
+    "latitude": 56.85085163,
+    "longitude": 24.91235983
+  },
+  {
+    "name": "Svalbard (Norway)",
+    "total": 62045,
+    "land": 62045,
+    "water": 0,
+    "latitude": 79.014175,
+    "longitude": 18.400508
+  },
+  {
+    "name": "Togo",
+    "total": 56785,
+    "land": 54385,
+    "water": 2400,
+    "latitude": 8.52531356,
+    "longitude": 0.96232845
+  },
+  {
+    "name": "Croatia",
+    "total": 56594,
+    "land": 55974,
+    "water": 620,
+    "latitude": 45.08047631,
+    "longitude": 16.40412899
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "total": 51209,
+    "land": 51187,
+    "water": 10,
+    "latitude": 44.17450125,
+    "longitude": 17.76876733
+  },
+  {
+    "name": "Costa Rica",
+    "total": 51100,
+    "land": 51060,
+    "water": 40,
+    "latitude": 9.97634464,
+    "longitude": -84.19208768
+  },
+  {
+    "name": "Slovakia",
+    "total": 49037,
+    "land": 48105,
+    "water": 930,
+    "latitude": 48.70547528,
+    "longitude": 19.47905218
+  },
+  {
+    "name": "Dominican Republic",
+    "total": 48671,
+    "land": 48320,
+    "water": 350,
+    "latitude": 18.89433082,
+    "longitude": -70.50568896
+  },
+  {
+    "name": "Estonia",
+    "total": 45227,
+    "land": 42388,
+    "water": 2840,
+    "latitude": 58.67192972,
+    "longitude": 25.54248537
+  },
+  {
+    "name": "Denmark",
+    "total": 43094,
+    "land": 42434,
+    "water": 660,
+    "latitude": 55.98125296,
+    "longitude": 10.02800992
+  },
+  {
+    "name": "Netherlands",
+    "total": 41850,
+    "land": 33893,
+    "water": 7650,
+    "latitude": 52.1007899,
+    "longitude": 5.28144793
+  },
+  {
+    "name": "Switzerland",
+    "total": 41284,
+    "land": 39997,
+    "water": 1280,
+    "latitude": 46.79785878,
+    "longitude": 8.20867471
+  },
+  {
+    "name": "Bhutan",
+    "total": 38394,
+    "land": 38394,
+    "water": 0,
+    "latitude": 27.41106589,
+    "longitude": 90.40188155
+  },
+  {
+    "name": "Taiwan",
+    "total": 36193,
+    "land": 32260,
+    "water": 3720,
+    "latitude": 23.7539928,
+    "longitude": 120.9542728
+  },
+  {
+    "name": "Guinea-Bissau",
+    "total": 36125,
+    "land": 28120,
+    "water": 8005,
+    "latitude": 12.04744948,
+    "longitude": -14.94972445
+  },
+  {
+    "name": "Moldova",
+    "total": 33846,
+    "land": 32891,
+    "water": 960,
+    "latitude": 47.19498804,
+    "longitude": 28.45673372
+  },
+  {
+    "name": "Belgium",
+    "total": 30528,
+    "land": 30278,
+    "water": 250,
+    "latitude": 50.63981576,
+    "longitude": 4.64065114
+  },
+  {
+    "name": "Lesotho",
+    "total": 30355,
+    "land": 30355,
+    "water": 0,
+    "latitude": -29.58003188,
+    "longitude": 28.22723131
+  },
+  {
+    "name": "Armenia",
+    "total": 29743,
+    "land": 28342,
+    "water": 1401,
+    "latitude": 40.28952569,
+    "longitude": 44.92993276
+  },
+  {
+    "name": "Solomon Islands",
+    "total": 28896,
+    "land": 27986,
+    "water": 910,
+    "latitude": -8.92178022,
+    "longitude": 159.6328767
+  },
+  {
+    "name": "Albania",
+    "total": 28748,
+    "land": 27398,
+    "water": 1350,
+    "latitude": 41.14244989,
+    "longitude": 20.04983396
+  },
+  {
+    "name": "Equatorial Guinea",
+    "total": 28051,
+    "land": 28051,
+    "water": 0,
+    "latitude": 1.70555135,
+    "longitude": 10.34137924
+  },
+  {
+    "name": "Burundi",
+    "total": 27834,
+    "land": 25680,
+    "water": 2150,
+    "latitude": -3.35939666,
+    "longitude": 29.87512156
+  },
+  {
+    "name": "Haiti",
+    "total": 27750,
+    "land": 27560,
+    "water": 190,
+    "latitude": 18.93502563,
+    "longitude": -72.68527509
+  },
+  {
+    "name": "Rwanda",
+    "total": 26338,
+    "land": 24668,
+    "water": 1670,
+    "latitude": -1.99033832,
+    "longitude": 29.91988515
+  },
+  {
+    "name": "North Macedonia",
+    "total": 25713,
+    "land": 25433,
+    "water": 280,
+    "latitude": 41.59530893,
+    "longitude": 21.68211346
+  },
+  {
+    "name": "Djibouti",
+    "total": 23200,
+    "land": 23180,
+    "water": 20,
+    "latitude": 11.74871806,
+    "longitude": 42.5606754
+  },
+  {
+    "name": "Belize",
+    "total": 22966,
+    "land": 22806,
+    "water": 160,
+    "latitude": 17.20027509,
+    "longitude": -88.71010486
+  },
+  {
+    "name": "El Salvador",
+    "total": 21041,
+    "land": 20721,
+    "water": 320,
+    "latitude": 13.73943744,
+    "longitude": -88.87164469
+  },
+  {
+    "name": "Israel",
+    "total": 20770,
+    "land": 20330,
+    "water": 440,
+    "latitude": 31.46110101,
+    "longitude": 35.00444693
+  },
+  {
+    "name": "Slovenia",
+    "total": 20273,
+    "land": 20151,
+    "water": 122,
+    "latitude": 46.11554772,
+    "longitude": 14.80444238
+  },
+  {
+    "name": "New Caledonia (France)",
+    "total": 18575,
+    "land": 18275,
+    "water": 300,
+    "latitude": -21.29991806,
+    "longitude": 165.6849237
+  },
+  {
+    "name": "Fiji",
+    "total": 18272,
+    "land": 18274,
+    "water": 0,
+    "latitude": -17.42858032,
+    "longitude": 165.4519543
+  },
+  {
+    "name": "Kuwait",
+    "total": 17818,
+    "land": 17818,
+    "water": 0,
+    "latitude": 29.33431262,
+    "longitude": 47.58700459
+  },
+  {
+    "name": "Eswatini",
+    "total": 17364,
+    "land": 17204,
+    "water": 160,
+    "latitude": -26.55843045,
+    "longitude": 31.4819369
+  },
+  {
+    "name": "Timor-Leste",
+    "total": 14919,
+    "land": 14919,
+    "water": 0,
+    "latitude": -8.82889162,
+    "longitude": 125.8443898
+  },
+  {
+    "name": "The Bahamas",
+    "total": 13943,
+    "land": 10010,
+    "water": 3870,
+    "latitude": 24.29036702,
+    "longitude": -76.62843038
+  },
+  {
+    "name": "Montenegro",
+    "total": 13812,
+    "land": 13452,
+    "water": 360,
+    "latitude": 42.78890259,
+    "longitude": 19.23883939
+  },
+  {
+    "name": "Vanuatu",
+    "total": 12189,
+    "land": 12189,
+    "water": 0,
+    "latitude": -16.22640909,
+    "longitude": 167.6864464
+  },
+  {
+    "name": "Falkland Islands (United Kingdom)",
+    "total": 12173,
+    "land": 12173,
+    "water": 0,
+    "latitude": -51.74483954,
+    "longitude": -59.35238956
+  },
+  {
+    "name": "Qatar",
+    "total": 11586,
+    "land": 11586,
+    "water": 0,
+    "latitude": 25.30601188,
+    "longitude": 51.18479632
+  },
+  {
+    "name": "Artsakh",
+    "total": 11458,
+    "land": 11458,
+    "water": 1200,
+    "latitude": 39.811291,
+    "longitude": 46.750836
+  },
+  {
+    "name": "The Gambia",
+    "total": 11295,
+    "land": 10000,
+    "water": 1295,
+    "latitude": 13.44965244,
+    "longitude": -15.39601295
+  },
+  {
+    "name": "Jamaica",
+    "total": 10991,
+    "land": 10831,
+    "water": 160,
+    "latitude": 18.15694878,
+    "longitude": -77.31482593
+  },
+  {
+    "name": "Kosovo",
+    "total": 10887,
+    "land": 0,
+    "water": 0,
+    "latitude": 42.57078707,
+    "longitude": 20.87249811
+  },
+  {
+    "name": "Lebanon",
+    "total": 10452,
+    "land": 10230,
+    "water": 170,
+    "latitude": 33.92306631,
+    "longitude": 35.88016072
+  },
+  {
+    "name": "Cyprus",
+    "total": 9251,
+    "land": 9241,
+    "water": 10,
+    "latitude": 34.91667211,
+    "longitude": 33.0060022
+  },
+  {
+    "name": "Puerto Rico (United States)",
+    "total": 9104,
+    "land": 9104,
+    "water": 3054,
+    "latitude": 18.22813055,
+    "longitude": -66.47307604
+  },
+  {
+    "name": "Abkhazia",
+    "total": 8660,
+    "land": 0,
+    "water": 0,
+    "latitude": 43.20684,
+    "longitude": 40.978432
+  },
+  {
+    "name": "French Southern Territories (France)",
+    "total": 7747,
+    "land": 7668,
+    "water": 79.8,
+    "latitude": -49.24895485,
+    "longitude": 69.22666758
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "total": 6959.41,
+    "land": 34.2,
+    "water": 6937,
+    "latitude": 15.540985,
+    "longitude": -178.296899
+  },
+  {
+    "name": "State of Palestine",
+    "total": 6020,
+    "land": 6000,
+    "water": 220,
+    "latitude": 31.91613893,
+    "longitude": 35.19628705
+  },
+  {
+    "name": "Brunei",
+    "total": 5765,
+    "land": 5265,
+    "water": 500,
+    "latitude": 4.51968958,
+    "longitude": 114.7220304
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "total": 5130,
+    "land": 5128,
+    "water": 0,
+    "latitude": 10.45733408,
+    "longitude": -61.26567923
+  },
+  {
+    "name": "French Polynesia (France)",
+    "total": 4167,
+    "land": 3827,
+    "water": 340,
+    "latitude": -14.72227409,
+    "longitude": -144.9049439
+  },
+  {
+    "name": "Transnistria",
+    "total": 4163,
+    "land": 0,
+    "water": 0,
+    "latitude": 47.368762,
+    "longitude": 29.299685
+  },
+  {
+    "name": "Cape Verde",
+    "total": 4033,
+    "land": 4033,
+    "water": 0,
+    "latitude": 15.95523324,
+    "longitude": -23.9598882
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands (United Kingdom)",
+    "total": 3903,
+    "land": 3903,
+    "water": 0,
+    "latitude": -54.46488248,
+    "longitude": -36.43318388
+  },
+  {
+    "name": "South Ossetia",
+    "total": 3900,
+    "land": 0,
+    "water": 0,
+    "latitude": 42.379667,
+    "longitude": 44.124506
+  },
+  {
+    "name": "Northern Cyprus",
+    "total": 3355,
+    "land": 0,
+    "water": 0,
+    "latitude": 35.26277486,
+    "longitude": 33.5684813
+  },
+  {
+    "name": "Samoa",
+    "total": 2842,
+    "land": 2821,
+    "water": 10,
+    "latitude": -13.75324346,
+    "longitude": -172.1648506
+  },
+  {
+    "name": "Hong Kong (China)",
+    "total": 2755,
+    "land": 1106,
+    "water": 1649,
+    "latitude": 22.39827737,
+    "longitude": 114.1138045
+  },
+  {
+    "name": "Luxembourg",
+    "total": 2586,
+    "land": 2586,
+    "water": 0,
+    "latitude": 49.76725361,
+    "longitude": 6.07182201
+  },
+  {
+    "name": "Bir Tawil (terra nullius)",
+    "total": 2060,
+    "land": 2060,
+    "water": 0,
+    "latitude": 21.876299,
+    "longitude": 33.679834
+  },
+  {
+    "name": "Mauritius",
+    "total": 2040,
+    "land": 2030,
+    "water": 10,
+    "latitude": -20.27768704,
+    "longitude": 57.57120551
+  },
+  {
+    "name": "Comoros",
+    "total": 1862,
+    "land": 1862,
+    "water": 0,
+    "latitude": -11.87783444,
+    "longitude": 43.68253968
+  },
+  {
+    "name": "Åland Islands (Finland)",
+    "total": 1580,
+    "land": 0,
+    "water": 0,
+    "latitude": 60.21488688,
+    "longitude": 19.95328768
+  },
+  {
+    "name": "Faroe Islands (Denmark)",
+    "total": 1393,
+    "land": 1393,
+    "water": 0,
+    "latitude": 62.05385403,
+    "longitude": -6.88095423
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "total": 964,
+    "land": 964,
+    "water": 0,
+    "latitude": 0.44391445,
+    "longitude": 6.72429658
+  },
+  {
+    "name": "Turks and Caicos Islands (United Kingdom)",
+    "total": 948,
+    "land": 430,
+    "water": 0,
+    "latitude": 21.83047572,
+    "longitude": -71.97387881
+  },
+  {
+    "name": "Kiribati",
+    "total": 811,
+    "land": 811,
+    "water": 0,
+    "latitude": 0.86001503,
+    "longitude": -45.61110513
+  },
+  {
+    "name": "Bahrain",
+    "total": 778,
+    "land": 778,
+    "water": 0,
+    "latitude": 26.04205135,
+    "longitude": 50.54196932
+  },
+  {
+    "name": "Dominica",
+    "total": 751,
+    "land": 751,
+    "water": 0,
+    "latitude": 15.4394702,
+    "longitude": -61.357726
+  },
+  {
+    "name": "Tonga",
+    "total": 747,
+    "land": 717,
+    "water": 30,
+    "latitude": -20.42843174,
+    "longitude": -174.8098734
+  },
+  {
+    "name": "Singapore",
+    "total": 716,
+    "land": 687,
+    "water": 10,
+    "latitude": 1.35876087,
+    "longitude": 103.8172559
+  },
+  {
+    "name": "Federated States of Micronesia",
+    "total": 702,
+    "land": 702,
+    "water": 0,
+    "latitude": 7.45246814,
+    "longitude": 153.2394379
+  },
+  {
+    "name": "Saint Lucia",
+    "total": 616,
+    "land": 606,
+    "water": 10,
+    "latitude": 13.89479481,
+    "longitude": -60.96969923
+  },
+  {
+    "name": "Isle of Man (United Kingdom)",
+    "total": 572,
+    "land": 572,
+    "water": 0,
+    "latitude": 54.22418911,
+    "longitude": -4.53873952
+  },
+  {
+    "name": "Guam (United States)",
+    "total": 549,
+    "land": 544,
+    "water": 0,
+    "latitude": 13.44165626,
+    "longitude": 144.7679102
+  },
+  {
+    "name": "Andorra",
+    "total": 468,
+    "land": 468,
+    "water": 0,
+    "latitude": 42.54229102,
+    "longitude": 1.56054378
+  },
+  {
+    "name": "Northern Mariana Islands (United States)",
+    "total": 464,
+    "land": 464,
+    "water": 0,
+    "latitude": 15.82927563,
+    "longitude": 145.6196965
+  },
+  {
+    "name": "Palau",
+    "total": 459,
+    "land": 459,
+    "water": 0,
+    "latitude": 7.28742784,
+    "longitude": 134.4080797
+  },
+  {
+    "name": "Seychelles",
+    "total": 452,
+    "land": 455,
+    "water": 0,
+    "latitude": -4.66099094,
+    "longitude": 55.47603279
+  },
+  {
+    "name": "Curaçao (Netherlands)",
+    "total": 444,
+    "land": 444,
+    "water": 0,
+    "latitude": 12.19551675,
+    "longitude": -68.97119369
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "total": 442,
+    "land": 442.6,
+    "water": 0,
+    "latitude": 17.2774996,
+    "longitude": -61.79469343
+  },
+  {
+    "name": "Barbados",
+    "total": 430,
+    "land": 431,
+    "water": 0,
+    "latitude": 13.18145428,
+    "longitude": -59.559797
+  },
+  {
+    "name": "Heard Island and McDonald Islands (Australia)",
+    "total": 412,
+    "land": 412,
+    "water": 0,
+    "latitude": -53.08724656,
+    "longitude": 73.5205171
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "total": 389,
+    "land": 389,
+    "water": 0,
+    "latitude": 13.22472269,
+    "longitude": -61.20129695
+  },
+  {
+    "name": "Jan Mayen (Norway)",
+    "total": 377,
+    "land": 377,
+    "water": 0,
+    "latitude": 71.020273,
+    "longitude": -8.324028
+  },
+  {
+    "name": "U.S. Virgin Islands (United States)",
+    "total": 347,
+    "land": 346,
+    "water": 1564,
+    "latitude": 17.95500624,
+    "longitude": -64.80301538
+  },
+  {
+    "name": "Grenada",
+    "total": 344,
+    "land": 344,
+    "water": 0,
+    "latitude": 12.11725044,
+    "longitude": -61.68220189
+  },
+  {
+    "name": "Malta",
+    "total": 316,
+    "land": 316,
+    "water": 0,
+    "latitude": 35.92149632,
+    "longitude": 14.40523316
+  },
+  {
+    "name": "Saint Helena Ascension and Tristan da Cunha (United Kingdom)",
+    "total": 308,
+    "land": 308,
+    "water": 0,
+    "latitude": -12.40355951,
+    "longitude": -9.54779416
+  },
+  {
+    "name": "Maldives",
+    "total": 300,
+    "land": 298,
+    "water": 0,
+    "latitude": 3.7287092,
+    "longitude": 73.45713004
+  },
+  {
+    "name": "Bonaire (Netherlands)",
+    "total": 294,
+    "land": 294,
+    "water": 0,
+    "latitude": 12.191347,
+    "longitude": -68.255288
+  },
+  {
+    "name": "Cayman Islands (United Kingdom)",
+    "total": 264,
+    "land": 264,
+    "water": 0,
+    "latitude": 19.42896497,
+    "longitude": -80.91213321
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "total": 261,
+    "land": 261,
+    "water": 0,
+    "latitude": 17.2645995,
+    "longitude": -62.68755265
+  },
+  {
+    "name": "Niue (New Zealand)",
+    "total": 260,
+    "land": 260,
+    "water": 0,
+    "latitude": -19.04945708,
+    "longitude": -169.8699468
+  },
+  {
+    "name": "Akrotiri and Dhekelia (United Kingdom)",
+    "total": 253.8,
+    "land": 0,
+    "water": 0,
+    "latitude": 34.636209,
+    "longitude": 32.926479
+  },
+  {
+    "name": "Saint Pierre and Miquelon (France)",
+    "total": 242,
+    "land": 242,
+    "water": 0,
+    "latitude": 46.91918789,
+    "longitude": -56.30319779
+  },
+  {
+    "name": "Cook Islands (New Zealand)",
+    "total": 236,
+    "land": 236,
+    "water": 0,
+    "latitude": -21.21927288,
+    "longitude": -159.7872422
+  },
+  {
+    "name": "American Samoa (United States)",
+    "total": 199,
+    "land": 199,
+    "water": 0,
+    "latitude": -14.30445997,
+    "longitude": -170.7180258
+  },
+  {
+    "name": "Marshall Islands",
+    "total": 181,
+    "land": 181,
+    "water": 11673,
+    "latitude": 7.00376358,
+    "longitude": 170.3397612
+  },
+  {
+    "name": "Aruba (Netherlands)",
+    "total": 180,
+    "land": 180,
+    "water": 0,
+    "latitude": 12.52088038,
+    "longitude": -69.98267711
+  },
+  {
+    "name": "Liechtenstein",
+    "total": 160,
+    "land": 160,
+    "water": 0,
+    "latitude": 47.13665835,
+    "longitude": 9.53574312
+  },
+  {
+    "name": "British Virgin Islands (United Kingdom)",
+    "total": 151,
+    "land": 151,
+    "water": 0,
+    "latitude": 18.52585755,
+    "longitude": -64.47146992
+  },
+  {
+    "name": "Wallis and Futuna (France)",
+    "total": 142,
+    "land": 142,
+    "water": 0,
+    "latitude": -13.88737039,
+    "longitude": -177.3483483
+  },
+  {
+    "name": "Christmas Island (Australia)",
+    "total": 135,
+    "land": 135,
+    "water": 0,
+    "latitude": -10.487973,
+    "longitude": 105.646814
+  },
+  {
+    "name": "Jersey (United Kingdom)",
+    "total": 116,
+    "land": 116,
+    "water": 0,
+    "latitude": 49.21837377,
+    "longitude": -2.12689938
+  },
+  {
+    "name": "Montserrat (United Kingdom)",
+    "total": 102,
+    "land": 102,
+    "water": 0,
+    "latitude": 16.73941406,
+    "longitude": -62.18518546
+  },
+  {
+    "name": "Anguilla (United Kingdom)",
+    "total": 91,
+    "land": 91,
+    "water": 0,
+    "latitude": 18.2239595,
+    "longitude": -63.06498927
+  },
+  {
+    "name": "Guernsey (United Kingdom)",
+    "total": 78,
+    "land": 78,
+    "water": 0,
+    "latitude": 49.46809761,
+    "longitude": -2.57239064
+  },
+  {
+    "name": "San Marino",
+    "total": 61,
+    "land": 61,
+    "water": 0,
+    "latitude": 43.94186747,
+    "longitude": 12.45922334
+  },
+  {
+    "name": "British Indian Ocean Territory (United Kingdom)",
+    "total": 60,
+    "land": 60,
+    "water": 54340,
+    "latitude": -7.33059751,
+    "longitude": 72.44541229
+  },
+  {
+    "name": "Bermuda (United Kingdom)",
+    "total": 54,
+    "land": 54,
+    "water": 0,
+    "latitude": 32.31367802,
+    "longitude": -64.7545589
+  },
+  {
+    "name": "Saint Martin (France)",
+    "total": 54,
+    "land": 54.4,
+    "water": 0,
+    "latitude": 18.08888611,
+    "longitude": -63.05972851
+  },
+  {
+    "name": "Bouvet Island (Norway)",
+    "total": 49,
+    "land": 49,
+    "water": 0,
+    "latitude": -54.417613,
+    "longitude": 3.362327
+  },
+  {
+    "name": "Pitcairn Islands (United Kingdom)",
+    "total": 47,
+    "land": 47,
+    "water": 0,
+    "latitude": -24.36500535,
+    "longitude": -128.317042
+  },
+  {
+    "name": "Norfolk Island (Australia)",
+    "total": 36,
+    "land": 36,
+    "water": 0,
+    "latitude": -29.0514609,
+    "longitude": 167.9492168
+  },
+  {
+    "name": "Sint Maarten (Netherlands)",
+    "total": 34,
+    "land": 34,
+    "water": 0,
+    "latitude": 18.05081728,
+    "longitude": -63.05713363
+  },
+  {
+    "name": "Macau (China)",
+    "total": 31.3,
+    "land": 28.2,
+    "water": 0,
+    "latitude": 22.22311688,
+    "longitude": 113.5093212
+  },
+  {
+    "name": "Tuvalu",
+    "total": 26,
+    "land": 26,
+    "water": 0,
+    "latitude": -8.511402,
+    "longitude": 179.133799
+  },
+  {
+    "name": "Nauru",
+    "total": 21,
+    "land": 21,
+    "water": 0,
+    "latitude": -0.51912639,
+    "longitude": 166.9325682
+  },
+  {
+    "name": "Saint Barthélemy (France)",
+    "total": 21,
+    "land": 0,
+    "water": 0,
+    "latitude": 17.89880451,
+    "longitude": -62.84067779
+  },
+  {
+    "name": "Sint Eustatius (Netherlands)",
+    "total": 21,
+    "land": 0,
+    "water": 0,
+    "latitude": -62.974182,
+    "longitude": 17.490431
+  },
+  {
+    "name": "Cocos (Keeling) Islands (Australia)",
+    "total": 14,
+    "land": 14,
+    "water": 0,
+    "latitude": -12.163077,
+    "longitude": 96.877777
+  },
+  {
+    "name": "Saba (Netherlands)",
+    "total": 13,
+    "land": 0,
+    "water": 0,
+    "latitude": 17.632532,
+    "longitude": -63.237296
+  },
+  {
+    "name": "Tokelau (New Zealand)",
+    "total": 12,
+    "land": 12,
+    "water": 0,
+    "latitude": -9.163812,
+    "longitude": -171.819402
+  },
+  {
+    "name": "Clipperton Island (France)",
+    "total": 6,
+    "land": 2,
+    "water": 4,
+    "latitude": 10.28333,
+    "longitude": -109.216666
+  },
+  {
+    "name": "Gibraltar (United Kingdom)",
+    "total": 6,
+    "land": 6.5,
+    "water": 0,
+    "latitude": 36.137064,
+    "longitude": -5.347921
+  },
+  {
+    "name": "Ashmore and Cartier Islands (Australia)",
+    "total": 5,
+    "land": 5,
+    "water": 0,
+    "latitude": -12.42993164,
+    "longitude": 123.5838379
+  },
+  {
+    "name": "Spratly Islands (disputed)",
+    "total": 5,
+    "land": 5,
+    "water": 0,
+    "latitude": 10.57674,
+    "longitude": 115.739889
+  },
+  {
+    "name": "Monaco",
+    "total": 2.02,
+    "land": 2.02,
+    "water": 0,
+    "latitude": 43.75274627,
+    "longitude": 7.40627677
+  },
+  {
+    "name": "Vatican City",
+    "total": 0.49,
+    "land": 0.49,
+    "water": 0,
+    "latitude": 41.90174985,
+    "longitude": 12.43387177
+  }
+]
