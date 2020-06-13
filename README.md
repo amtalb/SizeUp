@@ -1,7 +1,7 @@
 # SizeUp
 SizeUp is an Elm app that takes one country (or territory, department, breakaway state, etc.) and finds the country that most closely matches its area. This isn't a terribly sophisticated or groundbreaking tool but it is a bit interesting and it goes to show how distorted typical 2-dimensional maps are (Greenland is about the size of Saudi Arabia, not Africa!).
 
-Check out the live site at [sizeup.alexandermtalbott.com](sizeup.alexandermtalbott.com)
+Check out the live site at [https://sizeup.alexandermtalbott.com](sizeup.alexandermtalbott.com)
 
 ## Usage
 To build the project, enter the `app/` directory and run
