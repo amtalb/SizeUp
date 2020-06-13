@@ -72,3 +72,4 @@ database.rules.json
 firebase.json
 public/
 *.svg
+.firebaserc
