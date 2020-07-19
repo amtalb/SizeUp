@@ -1,6 +1,6 @@
 port module Main exposing (..)
 
-import Html exposing (div, h1, p, form, label, text, span)
+import Html exposing (div, h1, p, form, label, text)
 import Html.Events exposing (onClick)
 import Html.Attributes exposing (id)
 import Browser
@@ -8,7 +8,7 @@ import Dropdown
 import Array
 import List.Extra exposing (elemIndex)
 import Json.Encode
-import Json.Decode exposing (Decoder, field, string, float, int)
+import Json.Decode exposing (Decoder, field, string, float)
 import List.Split exposing (chunksOfRight)
 
 
