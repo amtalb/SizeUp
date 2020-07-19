@@ -1,15 +1,15 @@
 port module Main exposing (..)
 
-import Html exposing (div, h1, p, form, label, text)
+import Html exposing (div, h1, p, form, label, text, span)
+import Html.Events exposing (onClick)
 import Html.Attributes exposing (id)
 import Browser
 import Dropdown
 import Array
 import List.Extra exposing (elemIndex)
 import Json.Encode
-import Json.Decode exposing (Decoder, field, string, float)
+import Json.Decode exposing (Decoder, field, string, float, int)
 import List.Split exposing (chunksOfRight)
-import Debug exposing (log)
 
 
 
@@ -51,7 +51,12 @@ type alias Model =
   { array : Array.Array GeoEnt 
   , selectedValue : Maybe GeoEnt
   , compareValue : Maybe GeoEnt
+  , units: Units
   }
+
+type Units
+  = Kilometers
+  | Miles
   
 
 
@@ -60,7 +65,7 @@ type alias Model =
 
 init : () -> (Model, Cmd Msg)
 init _ = 
-  ( Model Array.empty Nothing Nothing
+  ( Model Array.empty Nothing Nothing Kilometers
   , Cmd.none
   )
 
@@ -74,6 +79,8 @@ type Msg
   | ValueSelected
   | UpdateJs
   | Received (Result Json.Decode.Error (Array.Array GeoEnt))
+  | ConvertToMiles
+  | ConvertToKilometers
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
@@ -93,6 +100,42 @@ update msg model =
           ( { model | array =  geoEnts }
           , Cmd.none)
         Err _ ->
+          (model, Cmd.none)
+    
+    ConvertToMiles ->
+      case model.selectedValue of
+        Just sv ->
+          case model.compareValue of
+            Just cv ->
+              let
+                newSelectedValue = 
+                  { sv | total = kmToMiles model sv.total }
+                newCompareValue =
+                  { cv | total = kmToMiles model cv.total }
+              in
+                ({ model | selectedValue = Maybe.Just newSelectedValue, compareValue = Maybe.Just newCompareValue, units = Miles }
+                , Cmd.none)
+            Nothing ->
+              (model, Cmd.none)
+        Nothing ->
+          (model, Cmd.none)
+
+    ConvertToKilometers ->
+      case model.selectedValue of
+        Just sv ->
+          case model.compareValue of
+            Just cv ->
+              let
+                newSelectedValue = 
+                  { sv | total = milesToKm model sv.total }
+                newCompareValue =
+                  { cv | total =  milesToKm model cv.total }
+              in
+                ({ model | selectedValue = Maybe.Just newSelectedValue, compareValue = Maybe.Just newCompareValue, units = Kilometers }
+                , Cmd.none)
+            Nothing ->
+              (model, Cmd.none)
+        Nothing ->
           (model, Cmd.none)
 
 searchSelectedGeoEnt : Maybe String -> Model -> Maybe GeoEnt
@@ -160,6 +203,20 @@ encodeCoords ge =
     , ( "longitude", Json.Encode.float ge.longitude )
     ]
   
+kmToMiles : Model -> Float -> Float
+kmToMiles model km =
+  if model.units == Kilometers then
+    km * 0.6213712
+  else
+    km
+
+milesToKm : Model -> Float -> Float
+milesToKm model miles =
+  if model.units == Miles then
+    miles * 1.609344
+  else
+    miles
+
 
 
 -- PORTS
@@ -180,7 +237,8 @@ subscriptions _ =
 
 decodeJson : Json.Decode.Value -> Msg
 decodeJson json =
-  Received (Json.Decode.decodeValue geoEntArrayDecoder json)
+  Received 
+  <| Json.Decode.decodeValue geoEntArrayDecoder json
 
 
 geoEntArrayDecoder : Decoder (Array.Array GeoEnt)
@@ -206,7 +264,11 @@ view : Model -> Browser.Document Msg
 view model =
   { title = "SizeUp"
   , body = 
-    [ div [ id "header" ]
+    [ div [ id "buttons" ] 
+      [ Html.button [ onClick ConvertToMiles ] [ text "Miles" ]
+      , Html.button [ onClick ConvertToKilometers ] [ text "Kilometers" ]
+      ]
+      , div [ id "header" ]
       [ div [ id "header-contents" ]
         [ h1 [] [ text "SizeUp" ]
         , p [] [ text "Pick a geographical entity below and I'll show you which worldwide entity is the most similar in size."]
@@ -229,13 +291,29 @@ view model =
           Just _ ->
             div [ id "bottom" ]
             [ div [ id "selected" ]
-              [ h1 [] [ text <| Maybe.withDefault "Not Selected" (viewCountry model.selectedValue Name) ]
-              , p [] [ text "Area: ", text <| Maybe.withDefault "Not Selected" (viewCountry model.selectedValue Total) ]
+              [ h1 [] [ text 
+                <| Maybe.withDefault "Not Selected" 
+                <| viewCountry model.selectedValue Name ]
+              , p [] [ text "Area: "
+                     , text 
+                     <| Maybe.withDefault "Not Selected" 
+                     <| viewCountry model.selectedValue Total 
+                     , text 
+                     <| viewUnits model.units
+                     ]
               ]
             , div [ id "bottom-filler" ] []
             , div [ id "compare" ]
-              [ h1 [] [ text <| Maybe.withDefault "Not Selected" (viewCountry model.compareValue Name) ]
-              , p [] [ text "Area: ", text <| Maybe.withDefault "Not Selected" (viewCountry model.compareValue Total) ]
+              [ h1 [] [ text 
+                <| Maybe.withDefault "Not Selected" 
+                <| viewCountry model.compareValue Name ]
+              , p [] [ text "Area: "
+                     , text 
+                     <| Maybe.withDefault "Not Selected" 
+                     <| viewCountry model.compareValue Total 
+                     , text 
+                     <| viewUnits model.units
+                     ]
               ]
             ]
           Nothing ->
@@ -254,24 +332,31 @@ viewCountry geoEnt option =
           Maybe.Just
           <| commafyNumber ge.total
         Land ->
-          Maybe.Just (String.fromFloat ge.land)
+          Maybe.Just 
+          <| String.fromInt
+          <| truncate ge.land
         Water ->
-          Maybe.Just (String.fromFloat ge.water)
+          Maybe.Just 
+          <| String.fromInt
+          <| truncate ge.water
         Latitude ->
-          Maybe.Just (String.fromFloat ge.latitude)
+          Maybe.Just 
+          <| String.fromFloat ge.latitude
         Longitude ->
-          Maybe.Just (String.fromFloat ge.longitude)
+          Maybe.Just 
+          <| String.fromFloat ge.longitude
     Nothing ->
       Nothing
 
 commafyNumber : Float -> String
-commafyNumber flt = 
+commafyNumber num = 
   String.join ","
   <| List.reverse
   <| List.map (String.join "")
   <| chunksOfRight 3
   <| String.split ""
-  <| String.fromFloat flt
+  <| String.fromInt
+  <| truncate num
 
 dropdownOptions : Model -> Dropdown.Options Msg
 dropdownOptions model =
@@ -286,3 +371,10 @@ dropdownOptions model =
 convertToItem : GeoEnt -> Dropdown.Item
 convertToItem geoEnt =
   { value = geoEnt.name, text = geoEnt.name, enabled = True }
+
+viewUnits : Units -> String
+viewUnits unit =
+  if unit == Kilometers then 
+    " km\u{0032}"
+  else
+    " mi\u{0032}"
