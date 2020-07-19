@@ -9,7 +9,7 @@ Check out the live site at [https://sizeup.alexandermtalbott.com](https://sizeup
 ## Usage
 To build the project, enter the `app/` directory and run
 ```
-elm make src/Main.elm --output=main.js
+elm make src/Main.elm --optimize --output=main.js
 ```
 
 This project uses Firebase as a backend. The data file is stored in a Firebase Realtime Database. If you want to get your own version of this project running, you can use my database or build your own with the `data/data.json` file.
