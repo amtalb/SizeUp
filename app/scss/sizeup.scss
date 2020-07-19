@@ -15,12 +15,15 @@ body {
 
     #header-contents {
       text-align: center;
+      max-width: 35vw;
+      margin: 0 auto;
       
       select {
         color: purple;
         background-color: #F4FEC1;
         font-size: 17px;
         font-family: 'Rokkitt', serif;
+        width: 30vw;
       }
     }
   }
@@ -29,7 +32,7 @@ body {
     top: 0; 
     bottom: 0; 
     position: absolute !important; 
-    width: 50vw; 
+    width: 45vw; 
     z-index: -1000;
   }
 
@@ -50,8 +53,12 @@ body {
     flex-direction: row;
 
     #selected, #compare {
-      width: 50vw;
+      width: 45vw;
       text-align: center;
+    }
+
+    #bottom-filler {
+      flex-grow: 12;
     }
   }
 }

@@ -1,13 +1,15 @@
 port module Main exposing (..)
 
-import Html exposing (..)
-import Html.Attributes exposing (..)
+import Html exposing (div, h1, p, form, label, text)
+import Html.Attributes exposing (id)
 import Browser
 import Dropdown
 import Array
 import List.Extra exposing (elemIndex)
 import Json.Encode
-import Json.Decode exposing (Decoder, list, field, string, float)
+import Json.Decode exposing (Decoder, field, string, float)
+import List.Split exposing (chunksOfRight)
+import Debug exposing (log)
 
 
 
@@ -172,7 +174,7 @@ port sendCoords : Json.Encode.Value -> Cmd msg
 
 
 subscriptions : Model -> Sub Msg
-subscriptions model =
+subscriptions _ =
   receiveJson decodeJson
 
 
@@ -230,6 +232,7 @@ view model =
               [ h1 [] [ text <| Maybe.withDefault "Not Selected" (viewCountry model.selectedValue Name) ]
               , p [] [ text "Area: ", text <| Maybe.withDefault "Not Selected" (viewCountry model.selectedValue Total) ]
               ]
+            , div [ id "bottom-filler" ] []
             , div [ id "compare" ]
               [ h1 [] [ text <| Maybe.withDefault "Not Selected" (viewCountry model.compareValue Name) ]
               , p [] [ text "Area: ", text <| Maybe.withDefault "Not Selected" (viewCountry model.compareValue Total) ]
@@ -248,7 +251,8 @@ viewCountry geoEnt option =
         Name ->
           Maybe.Just ge.name
         Total ->
-          Maybe.Just (String.fromFloat ge.total)
+          Maybe.Just
+          <| commafyNumber ge.total
         Land ->
           Maybe.Just (String.fromFloat ge.land)
         Water ->
@@ -259,6 +263,15 @@ viewCountry geoEnt option =
           Maybe.Just (String.fromFloat ge.longitude)
     Nothing ->
       Nothing
+
+commafyNumber : Float -> String
+commafyNumber flt = 
+  String.join ","
+  <| List.reverse
+  <| List.map (String.join "")
+  <| chunksOfRight 3
+  <| String.split ""
+  <| String.fromFloat flt
 
 dropdownOptions : Model -> Dropdown.Options Msg
 dropdownOptions model =

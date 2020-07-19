@@ -32,8 +32,9 @@
     app.ports.sendCoords.subscribe(function(coords) {
       update_globes(coords);
     });
-    var options1 = { zoom: 3.0 };
-    var options2 = { zoom: 3.0 };
+    const zoom = Math.pow(window.innerWidth, 1/8);
+    var options1 = { zoom: zoom };
+    var options2 = { zoom: zoom };
     var earth1 = new WE.map('earth_div1', options1);
     var earth2 = new WE.map('earth_div2', options2);
     var marker1 = WE.marker([0,0]).addTo(earth1)
