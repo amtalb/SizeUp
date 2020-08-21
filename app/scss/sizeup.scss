@@ -1,6 +1,10 @@
+$primary: #F4FEC1;
+$secondary: #2A0033;
+$secondary-alpha: #2A0033DD;
+
 body {
-  background-image: radial-gradient(ellipse at right, #F4FEC1, #2A0033);
-  color: #F4FEC1;
+  background-image: radial-gradient(ellipse at right, $primary, $secondary);
+  color: $primary;
   font-family: 'Rokkitt', serif;
   display: flex;
   justify-content: center;
@@ -8,19 +12,51 @@ body {
 
   h1 {
     font-family: 'Julius Sans One', sans-serif;
-    color: #F4FEC1;
+    color: $primary;
   }
 
-  #header {
+  #splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $secondary-alpha;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    #header-contents {
+    #text {
       text-align: center;
-      max-width: 35vw;
-      margin: 0 auto;
-      
+    }
+  }
+
+  #buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    button {
+      background-color: $primary;
+      border: 1px clear solid;
+    }
+  }
+  
+  #dropdown-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    #dropdown {
       select {
-        color: purple;
-        background-color: #F4FEC1;
+        color: $secondary;
+        background-color: $primary;
         font-size: 17px;
         font-family: 'Rokkitt', serif;
         width: 30vw;
@@ -34,18 +70,41 @@ body {
     position: absolute !important; 
     width: 45vw; 
     z-index: -1000;
+
+    @media (max-width: 1024px) {
+      left: 0;
+      right: 0;
+      height: 45vh;
+      width: 100vw;
+    }
   }
 
   #earth_div1 {
     left: 0;
+
+    @media (max-width: 1024px) {
+      top: 9vh;
+      bottom: auto;
+      left: auto;
+    }
   }
 
   #earth_div2 {
-    right: 0
+    right: 0;
+
+    @media (max-width: 1024px) {
+      top: auto;
+      bottom: 0;
+      right: auto;
+    }
   }
 
   #filler {
     flex-grow: 5;
+
+    @media (max-width: 1024px) {
+      flex-grow: 0
+    }
   }
 
   #bottom {

@@ -2,7 +2,7 @@ port module Main exposing (..)
 
 import Html exposing (div, h1, p, form, label, text)
 import Html.Events exposing (onClick)
-import Html.Attributes exposing (id)
+import Html.Attributes exposing (id, style)
 import Browser
 import Dropdown
 import Array
@@ -52,6 +52,7 @@ type alias Model =
   , selectedValue : Maybe GeoEnt
   , compareValue : Maybe GeoEnt
   , units: Units
+  , splash: Bool
   }
 
 type Units
@@ -65,7 +66,7 @@ type Units
 
 init : () -> (Model, Cmd Msg)
 init _ = 
-  ( Model Array.empty Nothing Nothing Kilometers
+  ( Model Array.empty Nothing Nothing Kilometers True
   , Cmd.none
   )
 
@@ -81,6 +82,7 @@ type Msg
   | Received (Result Json.Decode.Error (Array.Array GeoEnt))
   | ConvertToMiles
   | ConvertToKilometers
+  | HideSplash
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
@@ -137,6 +139,10 @@ update msg model =
               (model, Cmd.none)
         Nothing ->
           (model, Cmd.none)
+    
+    HideSplash ->
+      ({ model | splash = False }, Cmd.none)
+
 
 searchSelectedGeoEnt : Maybe String -> Model -> Maybe GeoEnt
 searchSelectedGeoEnt selectedValue model =
@@ -264,15 +270,23 @@ view : Model -> Browser.Document Msg
 view model =
   { title = "SizeUp"
   , body = 
-    [ div [ id "buttons" ] 
+    [ div           
+      [ id "splash" 
+      , style "visibility" (getSplashVisibility model)
+      ]
+      [ div [ id "text" ]
+        [ h1 [] [ text "SizeUp" ]
+        , p [] [ text "Pick a geographical entity from the list and I'll show you which worldwide entity is the most similar in size."]
+        , Html.button [ onClick HideSplash ] [ text "Okay" ]
+        ]
+      ]
+    , div [ id "buttons" ] 
       [ Html.button [ onClick ConvertToMiles ] [ text "Miles" ]
       , Html.button [ onClick ConvertToKilometers ] [ text "Kilometers" ]
       ]
-      , div [ id "header" ]
-      [ div [ id "header-contents" ]
-        [ h1 [] [ text "SizeUp" ]
-        , p [] [ text "Pick a geographical entity below and I'll show you which worldwide entity is the most similar in size."]
-        , Html.form []
+    , div [ id "dropdown-container" ] 
+      [ div [ id "dropdown" ]
+        [ Html.form []
           [ p []
             [ label []
               [ Dropdown.dropdown
@@ -284,41 +298,41 @@ view model =
           ]
         ]
       ]
-      , div [ id "earth_div1" ] []
-      , div [ id "earth_div2" ] []
-      , div [ id "filler" ] []
-      , case model.selectedValue of
-          Just _ ->
-            div [ id "bottom" ]
-            [ div [ id "selected" ]
-              [ h1 [] [ text 
-                <| Maybe.withDefault "Not Selected" 
-                <| viewCountry model.selectedValue Name ]
-              , p [] [ text "Area: "
-                     , text 
-                     <| Maybe.withDefault "Not Selected" 
-                     <| viewCountry model.selectedValue Total 
-                     , text 
-                     <| viewUnits model.units
-                     ]
-              ]
-            , div [ id "bottom-filler" ] []
-            , div [ id "compare" ]
-              [ h1 [] [ text 
-                <| Maybe.withDefault "Not Selected" 
-                <| viewCountry model.compareValue Name ]
-              , p [] [ text "Area: "
-                     , text 
-                     <| Maybe.withDefault "Not Selected" 
-                     <| viewCountry model.compareValue Total 
-                     , text 
-                     <| viewUnits model.units
-                     ]
-              ]
+    , div [ id "earth_div1" ] []
+    , div [ id "earth_div2" ] []
+    , div [ id "filler" ] []
+    , case model.selectedValue of
+        Just _ ->
+          div [ id "bottom" ]
+          [ div [ id "selected" ]
+            [ h1 [] [ text 
+              <| Maybe.withDefault "Not Selected" 
+              <| viewCountry model.selectedValue Name ]
+            , p [] [ text "Area: "
+                    , text 
+                    <| Maybe.withDefault "Not Selected" 
+                    <| viewCountry model.selectedValue Total 
+                    , text 
+                    <| viewUnits model.units
+                    ]
             ]
-          Nothing ->
-            div [] []
-      ]
+          , div [ id "bottom-filler" ] []
+          , div [ id "compare" ]
+            [ h1 [] [ text 
+              <| Maybe.withDefault "Not Selected" 
+              <| viewCountry model.compareValue Name ]
+            , p [] [ text "Area: "
+                    , text 
+                    <| Maybe.withDefault "Not Selected" 
+                    <| viewCountry model.compareValue Total 
+                    , text 
+                    <| viewUnits model.units
+                    ]
+            ]
+          ]
+        Nothing ->
+          div [] []
+    ]
   }
 
 viewCountry : Maybe GeoEnt -> ViewOption -> Maybe String
@@ -378,3 +392,10 @@ viewUnits unit =
     " km\u{0032}"
   else
     " mi\u{0032}"
+
+getSplashVisibility : Model -> String
+getSplashVisibility model = 
+  if model.splash == True then
+    "visible"
+  else
+    "hidden"
