@@ -111,9 +111,9 @@ update msg model =
             Just cv ->
               let
                 newSelectedValue = 
-                  { sv | total = kmToMiles model sv.total }
+                  { sv | total = sqKmToSqMiles model sv.total }
                 newCompareValue =
-                  { cv | total = kmToMiles model cv.total }
+                  { cv | total = sqKmToSqMiles model cv.total }
               in
                 ({ model | selectedValue = Maybe.Just newSelectedValue, compareValue = Maybe.Just newCompareValue, units = Miles }
                 , Cmd.none)
@@ -129,9 +129,9 @@ update msg model =
             Just cv ->
               let
                 newSelectedValue = 
-                  { sv | total = milesToKm model sv.total }
+                  { sv | total = sqMilesToSqKm model sv.total }
                 newCompareValue =
-                  { cv | total =  milesToKm model cv.total }
+                  { cv | total =  sqMilesToSqKm model cv.total }
               in
                 ({ model | selectedValue = Maybe.Just newSelectedValue, compareValue = Maybe.Just newCompareValue, units = Kilometers }
                 , Cmd.none)
@@ -209,17 +209,17 @@ encodeCoords ge =
     , ( "longitude", Json.Encode.float ge.longitude )
     ]
   
-kmToMiles : Model -> Float -> Float
-kmToMiles model km =
+sqKmToSqMiles : Model -> Float -> Float
+sqKmToSqMiles model km =
   if model.units == Kilometers then
-    km * 0.6213712
+    km * 0.38610
   else
     km
 
-milesToKm : Model -> Float -> Float
-milesToKm model miles =
+sqMilesToSqKm : Model -> Float -> Float
+sqMilesToSqKm model miles =
   if model.units == Miles then
-    miles * 1.609344
+    miles * 2.589988
   else
     miles
 

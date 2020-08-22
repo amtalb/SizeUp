@@ -28,6 +28,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-name: fade-out;
+    animation-duration: 1s;
+
+    @keyframes fade-out {
+      from {top: -100vh; bottom: 100vh;}
+      to   {top: 0; bottom: 0;}
+    }
 
     #text {
       text-align: center;
@@ -38,6 +45,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
+    z-index: 10;
 
     button {
       background-color: $primary;
@@ -75,7 +83,7 @@ body {
       left: 0;
       right: 0;
       height: 45vh;
-      width: 100vw;
+      width: 80vw;
     }
   }
 
@@ -86,6 +94,7 @@ body {
       top: 9vh;
       bottom: auto;
       left: auto;
+      right: 0
     }
   }
 
@@ -95,7 +104,8 @@ body {
     @media (max-width: 1024px) {
       top: auto;
       bottom: 0;
-      right: auto;
+      left: auto;
+      right: 0;
     }
   }
 
@@ -111,9 +121,21 @@ body {
     display: flex;
     flex-direction: row;
 
+    @media (max-width: 1024px) {
+      position: absolute;
+      left: 0;
+      flex-direction: column;
+      width: 20vw;
+      height: 50%;
+    }
+
     #selected, #compare {
       width: 45vw;
       text-align: center;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
     }
 
     #bottom-filler {
