@@ -73,3 +73,5 @@ firebase.json
 public/
 *.svg
 .firebaserc
+*.min.css
+*.map
