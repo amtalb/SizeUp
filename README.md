@@ -7,7 +7,7 @@ SizeUp is an Elm app that takes one country (or territory, department, breakaway
 Check out the live site at [https://sizeup.alexandermtalbott.com](https://sizeup.alexandermtalbott.com)
 
 ## Usage
-To build the project, enter the `app/` directory and run
+To build the project run:
 ```
 elm make src/Main.elm --optimize --output=main.js
 ```

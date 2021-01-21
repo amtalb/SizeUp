@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="sizeup.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+    <script>
+      function update_globes(coords) {
+        earth1.panTo([coords.sv.latitude, coords.sv.longitude])
+        marker1.setLatLng([coords.sv.latitude, coords.sv.longitude])
+        earth2.panTo([coords.cv.latitude, coords.cv.longitude])
+        marker2.setLatLng([coords.cv.latitude, coords.cv.longitude])
+      }
+    </script>
+</head>
+
+<body>
+  <div id="sizeup"></div>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+  
+  <script>
+    var app = Elm.Main.init({
+      node: document.getElementById('sizeup')
+    });
+
+    app.ports.sendCoords.subscribe(function(coords) {
+      update_globes(coords);
+    });
+    const zoom = Math.pow(window.innerWidth, 1/8);
+    var options1 = { zoom: zoom };
+    var options2 = { zoom: zoom };
+    var earth1 = new WE.map('earth_div1', options1);
+    var earth2 = new WE.map('earth_div2', options2);
+    var marker1 = WE.marker([0,0]).addTo(earth1)
+    var marker2 = WE.marker([0,0]).addTo(earth2)
+    WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(earth1); 
+    WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(earth2);
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyC2lFEZihqAMVFFjJPaP0EdDw4ooAmv1VY",
+      authDomain: "sizeup-522f8.firebaseapp.com",
+      databaseURL: "https://sizeup-522f8.firebaseio.com",
+      projectId: "sizeup-522f8",
+      storageBucket: "",
+      messagingSenderId: "1076411075973",
+      appId: "1:1076411075973:web:d25a1630b685324c7308ec" 
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    
+    var database = firebase.database();
+    firebase.database().ref('/').once('value').then(function(snapshot) {
+      var countries = (snapshot.val()) || 'Nada';
+      app.ports.receiveJson.send(countries);
+    });
+  </script>
+</body>
+</html>

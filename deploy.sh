@@ -1,10 +1,8 @@
 #!/bin/bash
 
 sass --style=compressed scss/sizeup.scss sizeup.min.css
-cp sizeup.min.css public/
+cp sizeup.min.css docs/
 
 elm make src/Main.elm --optimize --output=main.js
-cp main.js public/
-cp index.html public/
-
-firebase deploy
+cp main.js docs/
+cp index.html docs/
