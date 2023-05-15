@@ -67,3 +67,4 @@ node_modules/
 
 elm-stuff/
 *.css.map
+package-lock.json
